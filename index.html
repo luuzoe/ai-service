@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AI Service — AI နဲ့ လုပ်ပေးတဲ့ service များ</title>
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>AI Service</h1>
+    <p class="tagline">ဓာတ်ပုံ · Logo · Poster · အသံ · စာရေး — AI နဲ့ အမြန်လုပ်ပေးတယ်</p>
+    <div class="trust">
+      <span>✓ 24–48 နာရီအတွင်း ပို့ပေးမယ်</span>
+      <span>✓ WavePay / KBZPay နဲ့ ပေးလို့ရ</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h2 class="section-title">Service များ</h2>
+
+  <div class="services">
+    <div class="service-card">
+      <img src="images/portrait.jpg" alt="AI ဓာတ်ပုံ နမူနာ" loading="lazy">
+      <span class="sample-badge">နမူနာ</span>
+      <div class="service-body">
+        <h3>AI ဓာတ်ပုံ</h3>
+        <p>Professional portrait — profile ပုံ၊ CV ပုံ၊ pre-wedding style</p>
+        <div class="price-row">
+          <span class="price">10,000 Ks <small>/ 1 ပုံ</small></span>
+          <button class="btn-order" data-service="portrait">မှာမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/logo.jpg" alt="AI Logo နမူနာ" loading="lazy">
+      <span class="sample-badge">နမူနာ</span>
+      <div class="service-body">
+        <h3>AI Logo</h3>
+        <p>ဆိုင်အတွက် logo — 3 design ရွေးချယ်နိုင်</p>
+        <div class="price-row">
+          <span class="price">30,000 Ks</span>
+          <button class="btn-order" data-service="logo">မှာမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/poster.jpg" alt="AI Poster နမူနာ" loading="lazy">
+      <span class="sample-badge">နမူနာ</span>
+      <div class="service-body">
+        <h3>AI Poster</h3>
+        <p>Event / ဆိုင်ဖွင့် / promotion poster</p>
+        <div class="price-row">
+          <span class="price">20,000 Ks</span>
+          <button class="btn-order" data-service="poster">မှာမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card text-card">
+      <div class="service-icon">🔊</div>
+      <div class="service-body">
+        <h3>AI အသံဖတ် (Voiceover)</h3>
+        <p>Video / ကြော်ငြာအတွက် မြန်မာ/English အသံ</p>
+        <div class="price-row">
+          <span class="price">8,000 Ks <small>/ 1 မိနစ်</small></span>
+          <button class="btn-order" data-service="voice">မှာမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card text-card">
+      <div class="service-icon">✍️</div>
+      <div class="service-body">
+        <h3>AI စာရေး</h3>
+        <p>FB post / ကြော်ငြာစာ / caption ရေးပေးတယ်</p>
+        <div class="price-row">
+          <span class="price">5,000 Ks <small>/ 1 ပုဒ်</small></span>
+          <button class="btn-order" data-service="writing">မှာမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card text-card soon">
+      <div class="service-icon">🎬</div>
+      <div class="service-body">
+        <h3>AI Video <span class="soon-badge">မကြာမီ</span></h3>
+        <p>ကြော်ငြာ video တိုများ — မကြာမီ ရမယ်</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">ဘယ်လိုမှာရမလဲ?</h2>
+  <ol class="steps">
+    <li><b>1.</b> Service ရွေးပြီး form ဖြည့်ပါ</li>
+    <li><b>2.</b> WavePay / KBZPay နဲ့ ငွေလွှဲပြီး Txn ID ထည့်ပါ</li>
+    <li><b>3.</b> 24–48 နာရီအတွင်း Messenger ကနေ လက်ရာပို့ပေးမယ်</li>
+  </ol>
+
+  <h2 class="section-title" id="order-title">Order တင်မယ်</h2>
+  <div class="card">
+    <label>Service</label>
+    <select id="od-service">
+      <option value="portrait">AI ဓာတ်ပုံ — 10,000 Ks/ပုံ</option>
+      <option value="logo">AI Logo — 30,000 Ks</option>
+      <option value="poster">AI Poster — 20,000 Ks</option>
+      <option value="voice">AI အသံဖတ် — 8,000 Ks/မိနစ်</option>
+      <option value="writing">AI စာရေး — 5,000 Ks/ပုဒ်</option>
+    </select>
+
+    <label>နာမည်</label>
+    <input id="od-name" type="text" placeholder="သင့်နာမည်" autocomplete="off">
+
+    <label>ဖုန်းနံပါတ်</label>
+    <input id="od-phone" type="text" placeholder="09xxxxxxxxx" autocomplete="off" inputmode="tel">
+
+    <label>အသေးစိတ် <small>(လိုချင်တဲ့ပုံစံ၊ စာသား စသည်)</small></label>
+    <textarea id="od-details" rows="3" placeholder="ဥပမာ: အင်္ကျီဖြူနဲ့ professional ပုံ"></textarea>
+
+    <label>ဓာတ်ပုံမူရင်း <small>(AI ဓာတ်ပုံအတွက် — မရှိလဲ ရတယ်)</small></label>
+    <input id="od-photo" type="file" accept="image/*">
+    <p class="note">ဓာတ်ပုံမူရင်းကို order ပို့တဲ့အခါ Messenger မှာ တွဲပို့ပေးပါ။</p>
+
+    <label>ငွေပေးချေမှု</label>
+    <div class="pay-box" id="pay-box"></div>
+    <div class="pay-methods">
+      <label class="radio"><input type="radio" name="pay" value="WavePay" checked> WavePay</label>
+      <label class="radio"><input type="radio" name="pay" value="KBZPay"> KBZPay</label>
+    </div>
+
+    <label>Transaction ID <small>(ငွေလွှဲပြီးရင် ရတဲ့ ID)</small></label>
+    <input id="od-txn" type="text" placeholder="ဥပမာ: 0012345678" autocomplete="off">
+
+    <button id="od-submit" class="btn-primary btn-block">Order တင်မယ်</button>
+  </div>
+
+  <div id="order-done" class="card hidden">
+    <h3>Order ရပီ! ✅</h3>
+    <pre id="order-text" class="order-text"></pre>
+    <p class="note">Order စာသား copy ကူးပီးပီ — Messenger ဖွင့်ပြီး paste လုပ်ပြီး ပို့လိုက်ပါ။ (ဓာတ်ပုံမူရင်းရှိရင် တွဲပို့ပါ)</p>
+    <button id="od-messenger" class="btn-primary btn-block">Messenger ဖွင့်မယ်</button>
+    <button id="od-copy" class="btn-secondary btn-block">စာသား ပြန် Copy ကူးမယ်</button>
+  </div>
+</main>
+
+<footer>
+  <p>AI Service · 24–48 နာရီအတွင်း ပို့ပေးမယ်</p>
+</footer>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
